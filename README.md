@@ -1,2 +1,2 @@
 # AR-APP
-Just trying something.
+An Augmented reality app.

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <fragment
+        android:id="@+id/sceneform_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:name="com.google.ar.sceneform.ux.ArFragment"
+        />
+
+    <Button
+        android:id="@+id/animate_idle_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/animate_kick_button"
+        android:layout_marginBottom="25dp"
+        android:layout_marginStart="20dp"
+        android:text="IDLE"
+        />
+    <Button
+        android:id="@+id/animate_kick_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="25dp"
+        android:text="KICK"
+        />
+    <Button
+        android:id="@+id/animate_boxing_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/animate_kick_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="25dp"
+        android:layout_marginStart="20dp"
+        android:text="BOXING"
+        />
+
+    <Button
+        android:id="@+id/record"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/animate_kick_button"
+        android:layout_marginBottom="8dp"
+        android:padding="10dp"
+        android:text="RECORD"
+        app:layout_constraintBottom_toTopOf="@+id/animate_idle_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -62,6 +62,7 @@ public class VideoRecorder {
         this.sceneView = sceneView;
     }
 
+
     /**
      * Toggles the state of video recording.
      *

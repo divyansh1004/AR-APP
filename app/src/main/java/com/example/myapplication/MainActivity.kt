@@ -90,7 +90,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun placeObject(arFragment: ArFragment, anchor: Anchor?, model: Uri?) {
-
+//for placing
         ModelRenderable.builder()
             .setSource(arFragment.context,model)
             .build()
